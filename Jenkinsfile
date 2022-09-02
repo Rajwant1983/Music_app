@@ -1,6 +1,6 @@
 pipeline{
     environment {
-        registry = "rajwantkaur/Musicapp"
+        registry = "rajwantkaur/musicapp"
         registryCredentials = "dockerhub_id"
         dockerImage = ""
         HOME = "${env.WORKSPACE}"
