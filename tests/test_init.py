@@ -4,8 +4,8 @@ from urllib.request import urlopen
 from flask import url_for
 
 #  this is testing 3
-from app import application,db
-from schema import Colleges
+from tests.application.app import d
+from tests.application.schema import Colleges
 
 
 class TestBase(LiveServerTestCase):
@@ -21,7 +21,7 @@ class TestBase(LiveServerTestCase):
         return application
 
     def setUp(self):
-        from schema import Students
+        from tests.application.schema import Students
         d.create_all()  # create schema before we try to get the page
         
         test_college = Colleges(name="Test")
