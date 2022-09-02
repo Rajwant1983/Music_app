@@ -4,7 +4,7 @@ from urllib.request import urlopen
 from flask import url_for
 
 #  this is testing 3
-from app import application,d
+from app import application,db
 from schema import Colleges
 
 
