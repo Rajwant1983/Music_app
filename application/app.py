@@ -1,3 +1,4 @@
+from os import environ
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import secrets
