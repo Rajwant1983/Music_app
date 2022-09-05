@@ -5,7 +5,7 @@ import secrets
 
 application = Flask(__name__)
 application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
-application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
+#application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
 
 d = SQLAlchemy(application)
 
