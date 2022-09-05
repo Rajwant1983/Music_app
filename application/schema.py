@@ -1,5 +1,5 @@
 #Schema structure
-from app import d
+from application.app import d
 
 class Colleges(d.Model):
     college_id=d.Column(d.Integer,nullable=False,primary_key=True)
