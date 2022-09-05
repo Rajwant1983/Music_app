@@ -1,8 +1,8 @@
 # perform static database operation
 from schema import *
 
-# Task -1(only once)
-# d.create_all()
+#Task -1(only once)
+d.create_all()
 
 
 # c1=Colleges(college_id=1,college_name='Oxford',address='UK',director_name='Oxana')
