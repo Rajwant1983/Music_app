@@ -6,10 +6,10 @@ from schema import *
 @application.route('/')
 def root():
     return render_template('root.html')
-    
+
 @application.route('/colleges')
 def college_list():
-    all_colleges = Colleges.query.all()
+    all_colleges=Colleges.query.all()
     return render_template('all_colleges.html',list_of_names=all_colleges)
 
 @application.route('/college/<int:id>')
