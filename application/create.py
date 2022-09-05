@@ -4,7 +4,7 @@ from schema import *
 #Task -1(only once)
 d.create_all()
 
-
+# Task -2(only once)
 # c1=Colleges(college_id=1,college_name='Oxford',address='UK',director_name='Oxana')
 # d.session.add(c1)
 # c2=Colleges(college_id=2,college_name='Stanford',address='US',director_name='Paresh')
@@ -25,7 +25,7 @@ d.create_all()
 # p5=Programs(program_id=4,program_name='M.S.cybersecurity',fees=10000,college_id=1)
 # d.session.add(p5)
 
-d.session.commit()
+# d.session.commit()
 
 # Task -3 (multiple times)
 for clg in Colleges.query.all():
