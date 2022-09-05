@@ -12,7 +12,7 @@ def college_list():
     all_colleges = Colleges.query.all()
     return render_template('all_colleges.html',list_of_names = all_colleges)
 
-@application.route('/student/<int:id>')
+@application.route('/college/<int:id>')
 def programs(id):
     program_of_specific_college = Programs.query.filter_by(college_id=id)
     college = Colleges.query.get(id)
