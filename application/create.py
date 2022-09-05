@@ -5,14 +5,14 @@ from schema import *
 d.create_all()
 
 #Task -2(only once)
-c1=Colleges(college_id=1,college_name='Oxford',address='UK',director_name='Oxana')
-d.session.add(c1)
-c2=Colleges(college_id=2,college_name='Stanford',address='US',director_name='Paresh')
-d.session.add(c2)
-c3=Colleges(college_id=3,college_name='Harvard',address='US',director_name='Omni')
-d.session.add(c3)
-c4=Colleges(college_id=4,college_name='Cambridge',address='UK',director_name='Ene')
-d.session.add(c4)
+#c1=Colleges(college_id=1,college_name='Oxford',address='UK',director_name='Oxana')
+#d.session.add(c1)
+#c2=Colleges(college_id=2,college_name='Stanford',address='US',director_name='Paresh')
+#d.session.add(c2)
+#c3=Colleges(college_id=3,college_name='Harvard',address='US',director_name='Omni')
+#d.session.add(c3)
+#c4=Colleges(college_id=4,college_name='Cambridge',address='UK',director_name='Ene')
+#d.session.add(c4)
 
 # d.session.commit()
 
