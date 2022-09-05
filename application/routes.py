@@ -1,7 +1,7 @@
 # Routes and connectivity
 from flask import render_template
-from application.app import application
-from application.schema import *
+from app import application
+from schema import *
 
 @application.route('/')
 def root():
