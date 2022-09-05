@@ -6,7 +6,7 @@ from schema import *
 @application.route('/')
 def root():
     return render_template('root.html')
-
+    
 @application.route('/colleges')
 def college_list():
     all_colleges = Colleges.query.all()
