@@ -10,7 +10,7 @@ def root():
 @application.route('/colleges')
 def college_list():
     all_colleges = Colleges.query.all()
-    return render_template('all_colleges.html',list_of_names = all_colleges)
+    return render_template('all_colleges.html',list_of_names=all_colleges)
 
 @application.route('/college/<int:id>')
 def programs(id):
