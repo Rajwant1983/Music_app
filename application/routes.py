@@ -16,4 +16,4 @@ def college_list():
 def programs(id):
     program_of_specific_college = Programs.query.filter_by(college_id=id)
     college = Colleges.query.get(id)
-    return render_template('all Programs',list_of_names=program_of_specific_college,college=college)
+    return render_template('all Programs.html',list_of_names=program_of_specific_college,college=college)
