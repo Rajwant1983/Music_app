@@ -9,7 +9,7 @@ application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the depre
 
 d = SQLAlchemy(application)
 
-from routes import *
+from application.routes import *
 
 if __name__ == '__main__':
     application.run(debug=True,host='0.0.0.0',port='8086')
