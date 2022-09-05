@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>All Colleges</title>
+</head>
+<body>
+    <p>List of various top colleges and universities</p>
+    <table>
+        <thead>
+            <tr>
+                <th style="border: 1px solid black">Id</th>
+                <th style="border: 1px solid black">College Name</th>
+                <th style="border: 1px solid black">Explore more</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for college in list_of_names %}
+            <tr>
+                <td style="border: 1px solid black">{{college.college_id}}</td>
+                <td style="border: 1px solid black">{{college.college_name}}</td>
+                <td style="border: 1px solid black"><a href="{{url_for('programs',id=college.college_id)}}">Visit</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>

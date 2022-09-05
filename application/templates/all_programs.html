@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{college.college_name}}</title>
+</head>
+<body>
+    <p>{{college.address}}</p>
+    <p>{{college.director_name}}</p>
+    <p>All programs</p>
+    <table>
+        <thead>
+            <tr>
+                <th style="border: 1px solid black">Id</th>
+                <th style="border: 1px solid black">Program Name</th>
+                <th style="border: 1px solid black">Fees</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for program in list_of_names %}
+            <tr>
+                <td style="border: 1px solid black">{{program.program_id}}</td>
+                <td style="border: 1px solid black">{{program.program_name}}</td>
+                <td style="border: 1px solid black">{{program.fees}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>
